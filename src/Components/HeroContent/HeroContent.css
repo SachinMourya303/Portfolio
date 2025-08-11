@@ -1,0 +1,79 @@
+.herocontent {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 5px;
+}
+.media-icons a{
+    background: linear-gradient(to right , purple , orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 30px;
+}
+.media-icons a:hover{
+    transform: scale(1.05);
+}
+.herocontent img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99;
+    border: 1px solid #000;
+}
+
+.herocontent::after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to right, purple, orange);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: rotate 2s linear infinite
+}
+
+.resume-btn:hover{
+    transform: scale(1.05);
+}
+@keyframes rotate {
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+.name-brand {
+    background: linear-gradient(to right, purple, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.field {
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff !important;
+}
+
+@media only screen and (max-width:600px) {
+    .herocontent {
+        height: 150px;
+        width: 150px;
+    }
+
+    .name-brand,
+    .field {
+        font-size: 8vw;
+    }
+    .herocontent-introduction p{
+        font-size: 10px;
+    }
+}

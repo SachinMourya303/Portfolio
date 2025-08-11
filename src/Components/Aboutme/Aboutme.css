@@ -1,0 +1,41 @@
+.aboutme-heading {
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+.aboutme-bar {
+    content: "";
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, purple, orange);
+}
+
+.aboutme-modal-section {
+    margin-top: 100px;
+}
+
+.aboutme-modal {
+    height: 400px;
+}
+
+.aboutme-modal img {
+    height: 100%;
+}
+
+.skill-percentage {
+    content: "";
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, purple, orange);
+}
+
+
+@media screen and (max-width:768px) {
+    .aboutme-paragraph{
+        font-size: 10px;
+    }
+    .aboutme-modal{
+        height: 200px;
+    }
+}

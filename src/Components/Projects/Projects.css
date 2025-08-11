@@ -1,0 +1,44 @@
+.projects-heading {
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+.projects-bar {
+    content: "";
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, purple, orange);
+}
+
+.project {
+    height: 200px;
+    width: 380px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-img {
+    width: 100%;
+    transition: 3s;
+}
+
+.project-img:hover {
+    margin-top: -550px;
+    transition: 3s;
+}
+
+.project-frame {
+    background: linear-gradient(to right, purple, orange);
+}
+
+@media screen and (max-width:768px) {
+    .project {
+        width: 300px;
+    }
+
+    .project-img:hover {
+        margin-top: -100%;
+        transition: 3s;
+    }
+}

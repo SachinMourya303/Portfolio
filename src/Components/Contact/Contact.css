@@ -1,0 +1,58 @@
+.contact-heading {
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+.contact-bar {
+    content: "";
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, purple, orange);
+}
+
+.lets-talk-text {
+    background: linear-gradient(to right, purple, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 40px;
+}
+
+.media-contact a {
+    background: linear-gradient(to right, purple, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 20px;
+}
+
+.media-contact a:hover{
+    transform: scale(1.05);
+}
+
+form input {
+    background: #d3d3d315;
+    border: 0;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+form textarea {
+    background: #d3d3d315;
+    border: 0;
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+form button {
+    background: linear-gradient(to right, purple, orange);
+}

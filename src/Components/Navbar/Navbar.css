@@ -1,0 +1,37 @@
+.navbar-brand {
+  background: linear-gradient(to right, purple, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.connect-with-me-btn {
+  background: linear-gradient(to right, purple, orange);
+  font-size: 1.2vw;
+}
+
+.connect-with-me-btn:hover{
+  transform: scale(1.05);
+}
+
+.hover-line{
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(to right, purple, orange);
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.active ,.nav-link:hover{
+  .hover-line{
+    opacity: 1;
+  width: 100%;
+  transition: 0.5s;
+  }
+}
