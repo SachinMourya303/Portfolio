@@ -19,7 +19,7 @@ const Contact = () => {
               <span className='lets-talk-text'>Let's talk</span>
               <span className='text-white mt-3'><i className='bi bi-envelope-fill  fs-5 me-3'></i> sachinmourya303@gmail.com</span>
               <span className='text-white mt-3'><i className='bi bi-telephone-fill fs-5  me-3'></i> 9359489354</span>
-              <div className='media-contact d-flex justify-content-between col-4  mt-3'>
+              <div className='media-contact d-flex justify-content-between col-5  mt-3'>
                 <a href='https://www.instagram.com/sachinmourya_14/' className='media-icon bi bi-instagram'></a>
                 <a href='https://www.threads.com/@sachinmourya_14?xmt=AQF08L6L6fSQsAnl6T0ljKd1FuPObTXx68Hw09ptjKFKg_g' className='media-iocn bi bi-threads'></a>
                 <a href='https://github.com/SachinMourya303' className='media-iocn bi bi-github'></a>
