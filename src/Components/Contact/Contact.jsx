@@ -31,9 +31,9 @@ const Contact = () => {
           <div className="right-content col-12 col-lg-6">
             <form action="https://api.web3forms.com/submit" method="POST" className='d-flex flex-column'>
               <input type="hidden" name="access_key" value="bb770dec-7702-4229-a48f-1fd79d148cb2" />
-              <input type="text" name='name' placeholder='Enter Name' />
-              <input type="email" name='email' placeholder='Enter Email' />
-              <textarea name="messgae" placeholder='Enter Message'></textarea>
+              <input type="text" name='name' placeholder='Enter Name' required/>
+              <input type="email" name='email' placeholder='Enter Email' required/>
+              <textarea name="messgae" placeholder='Enter Message' required></textarea>
               <input type="checkbox" name="botcheck" class="hidden" style={{ display: " none" }} />
 
               <button className='submitBtn btn col-4 border-0 mt-5'>Submit</button>
