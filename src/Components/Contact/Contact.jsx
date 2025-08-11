@@ -22,6 +22,7 @@ const Contact = () => {
               <div className='media-contact d-flex justify-content-between col-4  mt-3'>
                 <a href='https://www.instagram.com/sachinmourya_14/' className='media-icon bi bi-instagram'></a>
                 <a href='https://www.threads.com/@sachinmourya_14?xmt=AQF08L6L6fSQsAnl6T0ljKd1FuPObTXx68Hw09ptjKFKg_g' className='media-iocn bi bi-threads'></a>
+                <a href='https://github.com/SachinMourya303' className='media-iocn bi bi-github'></a>
                 <a href='https://www.linkedin.com/in/sachin-mourya-b3ab11374/' className='media-iocn fw-bold'>in</a>
               </div>
             </div>
