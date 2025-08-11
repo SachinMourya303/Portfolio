@@ -36,7 +36,7 @@ const Contact = () => {
               <textarea name="messgae" placeholder='Enter Message'></textarea>
               <input type="checkbox" name="botcheck" class="hidden" style={{ display: " none" }} />
 
-              <button className='btn col-4 border-0 mt-5'>Submit</button>
+              <button className='submitBtn btn col-4 border-0 mt-5'>Submit</button>
             </form>
           </div>
         </div>

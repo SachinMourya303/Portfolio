@@ -56,3 +56,8 @@ form textarea {
 form button {
     background: linear-gradient(to right, purple, orange);
 }
+
+.submitBtn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
