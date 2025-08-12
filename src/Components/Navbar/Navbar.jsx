@@ -20,7 +20,7 @@ const Navbar = () => {
                         <button className='btn bi bi-x text-white fs-1 ms-auto' data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div className="offcanvas-body">
-                        <ul className="navbar-nav mx-auto gap-lg-4">
+                        <ul className="navbar-nav ms-auto mx-lg-auto gap-lg-4">
                         <li className='nav-item'>
                             <NavLink to="/" className="nav-link fs-5 d-flex flex-column">Home <span className='hover-line'></span></NavLink>
                         </li>
