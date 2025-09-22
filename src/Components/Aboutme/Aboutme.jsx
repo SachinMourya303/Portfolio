@@ -16,11 +16,8 @@ const Aboutme = () => {
                     </div>
 
                     <div className="aboutme-modal-section w-100 d-flex justify-content-around flex-wrap">
-                        <div className="aboutme-modal">
-                            <img src="/img/IMG_20250728_171206.jpg" alt="" className='rounded'/>
-                        </div>
 
-                        <div className='aboutme-details w-75'>
+                        <div className='aboutme-details w-100'>
                             <p className='aboutme-paragraph text-white mt-3 mt-lg-0'>I'm a frontend developer who enjoys building responsive, user-friendly websites and web apps. I work with technologies like HTML, CSS, JavaScript, and modern frameworks like Bootstrap ,React.
                                 Creating clean, accessible interfaces that work well across devices is something I really care about. I'm always exploring new tools and techniques to improve both the user experience and code quality.
                                 Passionate about learning and growing, I'm on a journey to become a well-rounded web developer who can bring ideas to life on the web.</p>
@@ -59,8 +56,26 @@ const Aboutme = () => {
                                 </motion.div>
                                 <motion.div initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 4 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>
                                     <div className='w-100 d-flex align-items-center justify-content-between mt-3'>
-                                    <span className='text-white col-1'>React</span>
+                                    <span className='text-white col-1'>React.js</span>
                                     <div className='col-7 col-md-10 d-flex rounded' style={{ background: '#d3d3d336' }}><span className='skill-percentage col-10'></span></div>
+                                </div>
+                                </motion.div>
+                                <motion.div initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 4 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>
+                                    <div className='w-100 d-flex align-items-center justify-content-between mt-3'>
+                                    <span className='text-white col-1'>Next.js</span>
+                                    <div className='col-7 col-md-10 d-flex rounded' style={{ background: '#d3d3d336' }}><span className='skill-percentage col-9'></span></div>
+                                </div>
+                                </motion.div>
+                                 <motion.div initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 4 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>
+                                    <div className='w-100 d-flex align-items-center justify-content-between mt-3'>
+                                    <span className='text-white col-1'>Node.js</span>
+                                    <div className='col-7 col-md-10 d-flex rounded' style={{ background: '#d3d3d336' }}><span className='skill-percentage col-7'></span></div>
+                                </div>
+                                </motion.div>
+                                <motion.div initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 4 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>
+                                    <div className='w-100 d-flex align-items-center justify-content-between mt-3'>
+                                    <span className='text-white col-1'>MongoDB</span>
+                                    <div className='col-7 col-md-10 d-flex rounded' style={{ background: '#d3d3d336' }}><span className='skill-percentage col-8'></span></div>
                                 </div>
                                 </motion.div>
                             </div>

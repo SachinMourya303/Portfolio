@@ -14,11 +14,11 @@ const HeroContent = () => {
                 <img src="/img/IMG_20250727_191836.jpg" alt="" className='w-100'/>
             </div>
             <div className='herocontent-label d-flex flex-wrap justify-content-center mt-3'>
-                <div className='w-75 text-center'><span className='name-brand'>I'm Sachin Mourya,</span> <span className='field'>frontend developer</span></div>
+                <div className='w-75 text-center'><span className='name-brand'>I'm Sachin Mourya,</span> <span className='field'>Mern Stack Developer</span></div>
             </div>
 
             <div className="herocontent-introduction d-flex justify-content-center w-100 text-center">
-              <p className='w-75 text-white'>Hi , I'm Sachin Mourya, a frontend developer who enjoys bulding clean and responsive website. I love turning designs into real, user friendly interface.</p>
+              <p className='w-75 text-white'>Hi , I'm Sachin Mourya, a Mern Stack developer who enjoys bulding clean and responsive website. I love turning designs into real, user friendly interface.</p>
             </div>
 
             <div className="media-icons d-flex justify-content-between col-6 col-md-2">
@@ -34,7 +34,7 @@ const HeroContent = () => {
                     <NavLink to="https://www.linkedin.com/in/sachin-mourya-b3ab11374/" className='connect-with-me-btn btn border-0 rounded-5 text-white fs-5' style={{width:"200px"}}>Connect With Me</NavLink>
                 </div>
                 <div className='btn'>
-                    <a href='/img/SachinMourya.pdf' download className='resume-btn btn border border-white rounded-5 text-white fs-5' style={{width:"200px"}}>My Resume</a>
+                    <a href='/img/SachinMouryaResume.pdf' download className='resume-btn btn border border-white rounded-5 text-white fs-5' style={{width:"200px"}}>My Resume</a>
                 </div>
               </div>
             </div>

@@ -21,7 +21,15 @@ const Projects = () => {
                                 <a href="https://nitramax.vercel.app/"><img src="/img/nitramax.vercel.app_.png" alt="" className='project-img' /></a>
                             </figure>
                             <figcaption className='text-white'>Nitramax</figcaption>
-                            <figcaption className='text-white'>Tailwind + React</figcaption>
+                            <figcaption className='text-white'>Tailwind + React.js</figcaption>
+                        </div>
+
+                        <div className="project-frame p-3 rounded mt-3">
+                            <figure className="project">
+                                <a href="https://blooger-blog.vercel.app/"><img src="/img/blooger-blog.png" alt="" className='project-img' /></a>
+                            </figure>
+                            <figcaption className='text-white'>Blooger</figcaption>
+                            <figcaption className='text-white'>Tailwind + Next.js</figcaption>
                         </div>
 
                         <div className="project-frame p-3 rounded mt-3">
@@ -29,7 +37,7 @@ const Projects = () => {
                                 <a href="https://seedling-sm.vercel.app/"><img src="/img/seedling-sm.netlify.app_.png" alt="" className='project-img' /></a>
                             </figure>
                             <figcaption className='text-white'>Seedling</figcaption>
-                            <figcaption className='text-white'>Bootstrap + React</figcaption>
+                            <figcaption className='text-white'>Bootstrap + React.js</figcaption>
                         </div>
 
                         <div className="project-frame p-3 rounded mt-3">
@@ -37,7 +45,7 @@ const Projects = () => {
                                 <a href="https://cineaura.vercel.app/"><img src="/img/cineaura.vercel.app_ (1).png" alt="" className='project-img' /></a>
                             </figure>
                             <figcaption className='text-white'>Cineaura</figcaption>
-                            <figcaption className='text-white'>Bootstrap + React</figcaption>
+                            <figcaption className='text-white'>Bootstrap + React.js</figcaption>
                         </div>
 
                         <div className="project-frame p-3 rounded mt-3">
