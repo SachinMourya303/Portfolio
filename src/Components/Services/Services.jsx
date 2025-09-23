@@ -21,7 +21,7 @@ const Services = () => {
                             <span className='service-name text-center'>Web development</span>
 
                             <div className="text-center">
-                                <span className='text-white services-info'>As a dedicated Front-End Developer, I craft visually appealing, responsive, and user-friendly websites using modern web technologies including HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React. I specialize in building clean, efficient, and interactive user interfaces that deliver seamless digital experiences across all devices. My focus is on combining creativity with functionality to help brands and businesses bring their ideas to life on the web.</span>
+                                <span className='text-white services-info'>As a MERN stack developer, I build full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). My services include creating responsive front-ends, developing RESTful APIs and server-side logic, and managing scalable databases. I implement user authentication, real-time data updates, and payment integrations, delivering secure and efficient solutions. I also deploy applications on cloud platforms, focusing on performance, maintainability, and seamless user experiences across all devices.</span>
                             </div>
                         </div>
 
