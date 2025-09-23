@@ -8,11 +8,15 @@
     }
   ],
   "routes": [
-  { "src": "/assets/(.*).woff2", "dest": "/assets/$1.woff2" },
-  { "src": "/assets/(.*).woff", "dest": "/assets/$1.woff" },
-  { "src": "/(.*).js", "dest": "/$1.js" },
-  { "src": "/(.*).css", "dest": "/$1.css" },
-  { "src": "/(.*)", "dest": "/index.html" }
-]
+    { "src": "/assets/(.*).js", "dest": "/assets/$1.js" },
+    { "src": "/assets/(.*).css", "dest": "/assets/$1.css" },
+    { "src": "/assets/(.*).woff2", "dest": "/assets/$1.woff2" },
+    { "src": "/assets/(.*).woff", "dest": "/assets/$1.woff" },
 
+    { "src": "/img/(.*)", "dest": "/img/$1" },
+    
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
