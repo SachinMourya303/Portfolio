@@ -7,12 +7,14 @@ import Services from './Components/Services/Services'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import Background from './Background/Background'
 
 const App = () => {
 
   const HomePage = () => {
     return(
       <>
+      <Background />
       <HeroContent/>
       <Aboutme/>
       <Services/>

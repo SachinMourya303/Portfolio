@@ -23,13 +23,15 @@
     transition: 3s;
 }
 
-.project-img:hover {
-    margin-top: -550px;
-    transition: 3s;
-}
-
 .project-frame {
     background: linear-gradient(to right, purple, orange);
+}
+
+.project-frame:hover {
+    .project-img {
+        margin-top: -100%;
+        transition: 3s;
+    }
 }
 
 @media screen and (max-width:1000px) {

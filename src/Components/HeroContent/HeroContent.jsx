@@ -4,6 +4,8 @@ import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap-icons/font/bootstrap-icons.min.css"
 import "/src/Components/HeroContent/HeroContent.css"
 import { NavLink } from 'react-router-dom'
+import { model } from '../../assets/assets'
+import { HashLink } from 'react-router-hash-link'
 
 const HeroContent = () => {
   return (
@@ -11,7 +13,7 @@ const HeroContent = () => {
         <div className="conatiner d-flex justify-content-center">
             <div className="d-flex flex-column align-items-center">
               <div className="herocontent mt-5">
-                <img src="/img/IMG_20250727_191836.jpg" alt="" className='w-100'/>
+                <img src={model} alt="" className='w-100'/>
             </div>
             <div className='herocontent-label d-flex flex-wrap justify-content-center mt-3'>
                 <div className='w-75 text-center'><span className='name-brand'>I'm Sachin Mourya,</span> <span className='field'>Mern Stack Developer</span></div>
@@ -31,7 +33,7 @@ const HeroContent = () => {
             <div className='herocontent-btns d-flex justify-content-center w-100 mt-5'>
               <div className='w-75 d-flex justify-content-center flex-wrap'>
                 <div className='btn'>
-                    <NavLink to="https://www.linkedin.com/in/sachin-mourya-b3ab11374/" className='connect-with-me-btn btn border-0 rounded-5 text-white fs-5' style={{width:"200px"}}>Connect With Me</NavLink>
+                    <HashLink to="/#contact" className='connect-with-me-btn btn border-0 rounded-5 text-white fs-5' style={{width:"200px"}}>Hire Me</HashLink>
                 </div>
                 <div className='btn'>
                     <a href='/img/SachinMouryaResume.pdf' download className='resume-btn btn border border-white rounded-5 text-white fs-5' style={{width:"200px"}}>My Resume</a>

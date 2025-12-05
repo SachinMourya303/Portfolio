@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const Aboutme = () => {
     return (
-        <div style={{marginBottom:"50px" , marginTop:"50px"}}>
+        <div id='aboutme' style={{marginBottom:"50px" , marginTop:"50px"}}>
             <div className="container d-flex justify-content-center">
                 <div className="aboutme-container w-100 d-flex flex-column align-items-center">
                     <div className='d-flex flex-column'>
@@ -18,9 +18,7 @@ const Aboutme = () => {
                     <div className="aboutme-modal-section w-100 d-flex justify-content-around flex-wrap">
 
                         <div className='aboutme-details w-100'>
-                            <p className='aboutme-paragraph text-white mt-3 mt-lg-0'>I'm a frontend developer who enjoys building responsive, user-friendly websites and web apps. I work with technologies like HTML, CSS, JavaScript, and modern frameworks like Bootstrap ,React.
-                                Creating clean, accessible interfaces that work well across devices is something I really care about. I'm always exploring new tools and techniques to improve both the user experience and code quality.
-                                Passionate about learning and growing, I'm on a journey to become a well-rounded web developer who can bring ideas to life on the web.</p>
+                            <p className='aboutme-paragraph text-white mt-3 mt-lg-0'>I’m Sachin Mourya, a MERN stack developer skilled in building fast, responsive, and user-friendly web applications. I work with HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, Next.js, Node.js, and MongoDB. I also use Redux, TanStack Query, and Shadcn UI to create efficient front-end workflows. With experience in Git, GitHub, CI/CD pipelines, and deployments on Vercel, Netlify, and Render, I focus on delivering reliable and scalable solutions.</p>
 
                             <div className="skills-percentage-section mt-5">
                                 <motion.div initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 0.6 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>

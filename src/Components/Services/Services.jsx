@@ -7,7 +7,7 @@ const Services = () => {
 
 
     return (
-        <div style={{ marginBottom: "50px", marginTop: "50px" }}>
+        <div id='services' style={{ marginBottom: "50px", marginTop: "50px" }}>
             <div className="container">
                 <div className="services-container d-flex flex-column align-items-center">
                     <div className='d-flex flex-column'>

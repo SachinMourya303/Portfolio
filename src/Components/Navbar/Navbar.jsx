@@ -3,9 +3,17 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap-icons/font/bootstrap-icons.min.css"
 import "/src/Components/Navbar/Navbar.css"
+import { HashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+    const links = [
+        { title: "Home", href: "/" },
+        { title: "About", href: "/#aboutme" },
+        { title: "Services", href: "/#services" },
+        { title: "Projects", href: "/#projects" },
+        { title: "Contact", href: "/#contact" },
+    ]
     return (
         <div className='container'>
             <nav className="navbar navbar-expand-md navbar-dark">
@@ -21,22 +29,14 @@ const Navbar = () => {
                     </div>
                     <div className="offcanvas-body">
                         <ul className="navbar-nav ms-auto mx-lg-auto gap-lg-4">
-                        <li className='nav-item'>
-                            <NavLink to="/" className="nav-link fs-5 d-flex flex-column">Home <span className='hover-line'></span></NavLink>
-                        </li>
-                        <li className='nav-item'>
-                            <NavLink to="/aboutme" className="nav-link fs-5 d-flex flex-column">AboutMe <span className='hover-line'></span></NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to="/services" className="nav-link fs-5 d-flex flex-column">Services <span className='hover-line'></span></NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to="/projects" className="nav-link fs-5 d-flex flex-column">Projects <span className='hover-line'></span></NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to="/contact" className="nav-link fs-5 d-flex flex-column">Contact <span className='hover-line'></span></NavLink>
-                        </li>
-                    </ul>
+                            {
+                                links.map((link, index) => (
+                                    <li key={index} className='nav-item'>
+                                        <HashLink to={link.href} className="nav-link fs-5 d-flex flex-column">{link.title} <span className='hover-line'></span></HashLink>
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </div>
                 </div>
 

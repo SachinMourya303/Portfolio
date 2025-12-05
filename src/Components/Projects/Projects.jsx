@@ -3,11 +3,13 @@ import "/src/Components/Projects/Projects.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap-icons/font/bootstrap-icons.min.css"
+import { projects } from '../../assets/assets'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
 
     return (
-        <div style={{ marginBottom: "50px", marginTop: "50px" }}>
+        <div id='projects' style={{ marginBottom: "50px", marginTop: "50px" }}>
             <div className="container">
                 <div className="projects-container d-flex flex-column align-items-center">
                     <div className='d-flex flex-column'>
@@ -16,53 +18,19 @@ const Projects = () => {
                     </div>
 
                     <div className="projects-list d-flex justify-content-center gap-4 w-100 flex-wrap" style={{ marginTop: "100px" }}>
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://nitramax.vercel.app/"><img src="/img/nitramax.vercel.app_.png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Nitramax</figcaption>
-                            <figcaption className='text-white'>Tailwind + React.js</figcaption>
-                        </div>
-
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://blooger-blog.vercel.app/"><img src="/img/blooger-blog.png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Blooger</figcaption>
-                            <figcaption className='text-white'>Tailwind + Next.js</figcaption>
-                        </div>
-
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://seedling-sm.vercel.app/"><img src="/img/seedling-sm.netlify.app_.png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Seedling</figcaption>
-                            <figcaption className='text-white'>Bootstrap + React.js</figcaption>
-                        </div>
-
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://cineaura.vercel.app/"><img src="/img/cineaura.vercel.app_ (1).png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Cineaura</figcaption>
-                            <figcaption className='text-white'>Bootstrap + React.js</figcaption>
-                        </div>
-
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://wasp-com.netlify.app/"><img src="/img/wasp-com.netlify.app_.png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Cineaura</figcaption>
-                            <figcaption className='text-white'>Html + Css</figcaption>
-                        </div>
-
-                        <div className="project-frame p-3 rounded mt-3">
-                            <figure className="project">
-                                <a href="https://smookeycafe.netlify.app/"><img src="/img/smookeycafe.netlify.app_.png" alt="" className='project-img' /></a>
-                            </figure>
-                            <figcaption className='text-white'>Cineaura</figcaption>
-                            <figcaption className='text-white'>Html + Css</figcaption>
-                        </div>
+                        {
+                            projects.map((item, index) => (
+                                <motion.div key={index} initial={{opacity: 0, y:50}} whileInView={{opacity:1 ,y:0}} transition={{duration : 2 , ease : "easeOut"}} viewport={{once : false , amount : 0.5}}>
+                                <div className="project-frame p-3 rounded mt-3">
+                                    <figure className="project">
+                                        <a href={item.url}><img src={item.pic} alt="" className='project-img' /></a>
+                                    </figure>
+                                    <figcaption className='text-white'>{item.title}</figcaption>
+                                    <figcaption className='text-white'>{item.languages}</figcaption>
+                                </div>
+                                </motion.div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import "/src/Components/Contact/Contact.css"
 
 const Contact = () => {
   return (
-    <div>
+    <div id='contact'>
       <div className="contact-container d-flex flex-column align-items-center">
         <div className='d-flex flex-column'>
           <span className='contact-heading'>Get In Touch</span>
@@ -17,8 +17,8 @@ const Contact = () => {
           <div className="left-content col-12 col-lg-4">
             <div className='d-flex flex-column'>
               <span className='lets-talk-text'>Let's talk</span>
-              <span className='text-white mt-3'><i className='bi bi-envelope-fill  fs-5 me-3'></i> sachinmourya303@gmail.com</span>
-              <span className='text-white mt-3'><i className='bi bi-telephone-fill fs-5  me-3'></i> 9359489354</span>
+              <a href="mailto:sachinmourya303@gmail.com" className='text-white mt-3 text-decoration-none'><i className='bi bi-envelope-fill  fs-5 me-3'></i> sachinmourya303@gmail.com</a>
+              <a href="tel:+919359489354" className='text-white mt-3 text-decoration-none'><i className='bi bi-telephone-fill fs-5  me-3'></i> 9359489354</a>
               <div className='media-contact d-flex justify-content-between col-5  mt-3'>
                 <a href='https://www.instagram.com/sachinmourya_14/' className='media-icon bi bi-instagram'></a>
                 <a href='https://www.threads.com/@sachinmourya_14?xmt=AQF08L6L6fSQsAnl6T0ljKd1FuPObTXx68Hw09ptjKFKg_g' className='media-iocn bi bi-threads'></a>
@@ -34,7 +34,7 @@ const Contact = () => {
               <input type="text" name='name' placeholder='Enter Name' required/>
               <input type="email" name='email' placeholder='Enter Email' required/>
               <textarea name="messgae" placeholder='Enter Message' required></textarea>
-              <input type="checkbox" name="botcheck" class="hidden" style={{ display: " none" }} />
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: " none" }} />
 
               <button className='submitBtn btn col-4 border-0 mt-5'>Submit</button>
             </form>
