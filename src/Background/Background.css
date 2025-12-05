@@ -1,62 +1,29 @@
-.background-blur {
+.background-blur{
     height: 100%;
     width: 100%;
-    z-index: -1;         /* below all content */
-    pointer-events: none; /* don't block clicks */
+    z-index: -999;
 }
-
-.frame {
+.frame{
     display: flex;
-    height: 80%;
-    width: 50%;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    animation: round infinite linear 20s;
+    height: 100%;
+    width: 100%;
+    animation: motion infinite 20s linear;
 }
 
-.content1, .content2, .content3 {
-    height: 50%;
+.content{
     width: 50%;
+    height: 50%;
+    background: linear-gradient(to right, brown , blue);
     filter: blur(130px);
-    border-radius: 50%;
 }
 
-.content1 { background: orange; }
-.content2 { background: red; }
-.content3 { background: blue; }
-
-.navbar {
-  z-index: 1000;
-}
-
-@keyframes round {
-    from {
+@keyframes motion {
+    from{
         transform: rotate(0deg);
     }
-  to {
-    transform: rotate(360deg);
-}
-}
-
-@media screen and (max-width:768px) {
-    .background-blur{
-        height: 100%;
-        width: 100%;
-    }
-    .frame{
-        height: 50%;
-        width: 100%;
+    to{
+        transform: rotate(360deg);
     }
 }
-
-/* @media screen and (min-width:1440px) {
-    .background-blur{
-        height: 100%;
-        width: 100%;
-    }
-    .frame{
-        height: 50%;
-        width: 20%;
-    }
-} */

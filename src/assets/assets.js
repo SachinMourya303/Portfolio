@@ -10,7 +10,7 @@ export const projects = [
     {
         title: "Twitbook - Social media app",
         url: "https://twitbook.onrender.com/",
-        pic: "https://res.cloudinary.com/dscy0cvsh/image/upload/v1764862069/twitbook.onrender.com__dkjdr7.png",
+        pic: "https://res.cloudinary.com/dscy0cvsh/image/upload/v1764936544/Picsart_25-12-05_17-37-56-004_t1y0pn.jpg",
         languages: "React.js + Tailwindcss + Mongodb",
     },
     {

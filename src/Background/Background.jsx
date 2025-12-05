@@ -7,9 +7,7 @@ const Background = () => {
   return (
     <div className="background-blur position-fixed d-flex justify-content-center align-items-center top-0 overflow-hidden">
       <div className="frame">
-        <span className="content1"></span>
-        <span className="content2"></span>
-        <span className="content3"></span>
+        <span className="content"></span>
       </div>
     </div>
 

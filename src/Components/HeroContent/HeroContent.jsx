@@ -36,7 +36,7 @@ const HeroContent = () => {
                     <HashLink to="/#contact" className='connect-with-me-btn btn border-0 rounded-5 text-white fs-5' style={{width:"200px"}}>Hire Me</HashLink>
                 </div>
                 <div className='btn'>
-                    <a href='/img/SachinMouryaResume.pdf' download className='resume-btn btn border border-white rounded-5 text-white fs-5' style={{width:"200px"}}>My Resume</a>
+                    <a href='/img/SachinMourya.pdf' download className='resume-btn btn border border-white rounded-5 text-white fs-5' style={{width:"200px"}}>My Resume</a>
                 </div>
               </div>
             </div>
